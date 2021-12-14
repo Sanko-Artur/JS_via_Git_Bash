@@ -2,7 +2,7 @@
 Выполнить явное преобразование(number, string, boolean)
  */
 let n = 0;
-let str = "5";
+let str = '5';
 let bool = true;
 
 console.log(Number(n));
