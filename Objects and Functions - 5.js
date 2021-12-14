@@ -2,22 +2,23 @@
 -        Напишите функцию, которая определяет является ли число простым или нет
  */
 
-let num = 115;
+let number = 115;
 
-function prime(a) {
-    if (a == 2) {
-        console.log(`${a} is prime!`);
+function isPrime(num) {
+    if (num === 2) {
+        return true;
     }
-    if (a < 2) {
-        console.log(`${a} is not prime!`);
+    if (num < 2) {
+        return false;
     }
-    for (let j = 2; j < a; j++) {
-        if (a % j == 0) {
-            console.log(`${a} is not prime!`);
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return false;
             break;
         }
-        console.log(`${a} is prime!`);
+        return true;
     }
 }
 
-prime(num);
+let result = isPrime(number);
+console.log(result);

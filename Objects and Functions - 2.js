@@ -6,9 +6,9 @@
 let pears = 10;
 let apples = 20;
 
-function sum1() {
+function getSumOfFruits() {
     return pears + apples;
 }
 
-let sum = sum1();
-console.log(sum);
+let sumOfFruits = getSumOfFruits();
+console.log(sumOfFruits);

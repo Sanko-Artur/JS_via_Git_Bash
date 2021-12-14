@@ -10,7 +10,7 @@ let data = {
         c: 'Robert',
         d: 'Natasha',
     },
-    message: "Hello ",
+    message: 'Hello ',
 }
 
 function determine(name) {
@@ -19,7 +19,7 @@ function determine(name) {
             console.log(data.message + data.name[key]);
             break;
         } else {
-            console.log("There\'s no this name");
+            console.log(`There\'s no this name`);
         }
     }
 }
