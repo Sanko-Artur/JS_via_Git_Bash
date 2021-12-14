@@ -8,11 +8,11 @@ let b = 35;
 let c = 75;
 let d = 1;
 
-function check(item1, item2) {
+function checkIndexOfArray(item1, item2) {
     console.log(item1.indexOf(item2));
 }
 
-check(arr, a);
-check(arr, b);
-check(arr, c);
-check(arr, d);
+checkIndexOfArray(arr, a);
+checkIndexOfArray(arr, b);
+checkIndexOfArray(arr, c);
+checkIndexOfArray(arr, d);

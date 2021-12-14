@@ -5,6 +5,6 @@
 let a = 1;
 
 for (; a < 150; a++) {
-    if (a % 2 == 0) continue;
+    if (a % 2 === 0) continue;
     console.log(a);
 }
