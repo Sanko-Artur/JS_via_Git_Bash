@@ -7,21 +7,21 @@ let number2 = 115;
 let number3 = 61;
 
 function isPrime(num) {
+
+    let isTrue = true;
+    let isFalse = false;
+
     if (num === 2) {
-        let isTrue = true;
         console.log(isTrue);
     }
     if (num < 2) {
-        let isFalse = false;
         console.log(isFalse);
     }
     for (let i = 2; i < num; i++) {
         if (num % i === 0) {
-            let isFalse = false;
             console.log(isFalse);
             break;
         }
-        let isTrue = true;
         console.log(isTrue);
     }
 }
