@@ -7,28 +7,23 @@ let number2 = 115;
 let number3 = 61;
 
 function isPrime(num) {
-
-    let isTrue = true;
-    let isFalse = false;
-
-    if (num === 2) {
-        console.log(isTrue);
+    if (num == 2) {
+        return true;
     }
     if (num < 2) {
-        console.log(isFalse);
+        return false;
     }
     for (let i = 2; i < num; i++) {
-        if (num % i === 0) {
-            console.log(isFalse);
-            break;
+        if (num % i == 0) {
+            return false;
         }
-        console.log(isTrue);
     }
+    return true;
 }
 
-console.log(number1);
-isPrime(number1);
-console.log(number2);
-isPrime(number2);
-console.log(number3);
-isPrime(number3);
+let result1 = isPrime(number1);
+console.log(result1);
+let result2 = isPrime(number2);
+console.log(result2);
+let result3 = isPrime(number3);
+console.log(result3);
