@@ -7,14 +7,14 @@ let number2 = 115;
 let number3 = 61;
 
 function isPrime(num) {
-    if (num == 2) {
+    if (num === 2) {
         return true;
     }
     if (num < 2) {
         return false;
     }
     for (let i = 2; i < num; i++) {
-        if (num % i == 0) {
+        if (num % i === 0) {
             return false;
         }
     }
